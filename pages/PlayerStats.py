@@ -1,9 +1,11 @@
 from utils.comparisson_tabs import scatter_tab, player_comparison_tab
 from utils.loading import load_data
+from utils.navigation_bar import Navbar
 import os
 import streamlit as st
 
 def main():
+    Navbar()
     st.sidebar.header("Player statistics")
     st.set_page_config(page_title="Player page statistics", page_icon="🌍")
     """Player statistics dashboard with interactive tabs for scatter plots and comparisons."""

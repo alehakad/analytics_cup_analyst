@@ -1,5 +1,6 @@
 from utils.football_pitch import FootballPitch
 import streamlit as st
+from utils.navigation_bar import Navbar
 
 
 def pitch_tab():
@@ -12,6 +13,7 @@ def pitch_tab():
     st.plotly_chart(fig, use_container_width=True)
 
 def main():
+    Navbar()
     """Team statistics dashboard placeholder for future visualizations."""
     st.sidebar.header("Team statistics")
     st.set_page_config(page_title="Team page statistics", page_icon="🌍")
